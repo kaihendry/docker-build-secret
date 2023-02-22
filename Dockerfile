@@ -1,5 +1,3 @@
 FROM alpine
 
-RUN --mount=type=secret,id=gitconfig,target=/root/.gitconfig
-
-RUN cat /root/.gitconfig
+RUN --mount=type=secret,id=gitconfig,target=/root/.gitconfig cat /root/.gitconfig
